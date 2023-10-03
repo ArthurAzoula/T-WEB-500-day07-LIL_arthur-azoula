@@ -17,7 +17,7 @@ const limitCoords = (x, y) => {
     let maxY = bottom - canvasRect.height;
 
     let adjustedX = x < left ? left : x > maxX ? maxX : x;
-    let adjustedY = y < top ? top : y > maxY ? maxY : y;
+    let adjustedY = y < top ? top : y > maxY + 3.5 ? maxY + 3.5 : y;
 
     return {
         x: parseInt(adjustedX - (left / 2 + right / 2)) + canvasRect.width / 2,

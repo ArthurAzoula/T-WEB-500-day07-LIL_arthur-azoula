@@ -31,7 +31,7 @@ function acceptsCookies() {
     document.querySelector("footer div:first-of-type").style.display = "none";
     document.querySelector("footer").appendChild(cookieDiv);
     document.querySelector("footer div:last-of-type").style.display = "block";
-    cookieDiv.innerText = "Cookies accepted";
+    cookieDiv.innerText = "Cookies accepted - ";
     cookieDiv.appendChild(buttonDelete);
 }
 
