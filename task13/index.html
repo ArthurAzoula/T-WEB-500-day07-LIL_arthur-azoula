@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Search and Reset Example</title>
+</head>
+
+<body>
+    <form>
+        <label for="text">Votre texte :</label>
+        <input type="text" id="text" name="text" required>
+        <label for="type">Type :</label>
+        <select id="type" name="type">
+            <option value="note">Note</option>
+            <option value="email">Mail</option>
+            <option value="todo">Todo</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+    <ul></ul>
+    <form>
+        <label for="searchType">Chercher par type: </label>
+        <select id="searchType" name="searchType">
+            <option disabled value="all">Choose a type : </option>
+            <option value="note">Note</option>
+            <option value="email">Mail</option>
+            <option value="todo">Todo</option>
+        </select>
+        <button type="button" id="searchButton">Search</button>
+        <button type="button" id="resetButton">Reset</button>
+    </form>
+    <ul></ul>
+    <script src="script.js"></script>
+</body>
+
+</html>
