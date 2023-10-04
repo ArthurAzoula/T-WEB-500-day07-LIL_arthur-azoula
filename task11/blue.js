@@ -1,15 +1,17 @@
 const p = document.querySelector('p');
 
-console.log(p);
+const addClassFunction = () => {
+    p.addEventListener('mouseenter', () => {
+        p.classList.add('blue');
+    })
 
-p.addEventListener('mouseenter', () => {
-    p.classList.add('blue');
-})
+    p.addEventListener('mouseleave', () => {
+        p.classList.remove('blue');
+    });
 
-p.addEventListener('mouseleave', () => {
-    p.classList.remove('blue');
-});
+    p.addEventListener('click', () => {
+        p.classList.toggle('hightlight');
+    });
+}
 
-p.addEventListener('click', () => { 
-    p.classList.toggle('hightlight');
-});
+addClassFunction();
